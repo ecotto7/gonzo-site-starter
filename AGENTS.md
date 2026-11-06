@@ -9,7 +9,7 @@
 - Batch changes into one commit/push when possible.
 - Pages use folder URLs: /about/ = about/index.html. Never rename or move a
   page without adding a 301 redirect in netlify.toml.
-- Forms use Netlify Forms: data-netlify="true", a name attribute, a hidden
-  form-name input, honeypot field, action="/thanks.html".
+- Do not use Netlify Forms. Keep the live site's existing form, such as a
+  JotForm embed, and do not rebuild it.
 - Compress images before committing; keep them under ~300 KB where possible.
 - Don't touch DNS or domain settings; I handle those manually.
